@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content=""></meta>
+    <meta name="author" content=""></meta>
+    <link rel="icon" href="../../favicon.ico"></link>
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></link>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom2.css" rel="stylesheet"></link>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Snowbard-Tour 2016</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Votes <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#budgetrow">Budget</a></li>
+                    <li><a href="#ortrow">Ort</a></li>
+                    <li><a href="#transportrow">Transport</a></li>
+                    <li><a href="#zeitraumrow">Zeitraum</a></li>
+                    <li><a href="#unterkunftrow">Unterkunft</a></li>
+					<li><a href="#musikrow">Musik</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="top">
+	Test      
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-2">
+			<div class="symbol">
+			 <span class="glyphicon glyphicon-eur" aria-hidden="true"></span>
+			</div>
+          <h2>Budget</h2>
+          <p>Wählt einen Budgetbereich aus. Bitte denkt an weitere Kosten wie Leihen, Skipass, Sprit (Auto ;) ), Essen usw.</p>
+          <p><a class="btn btn-default" href="#budgetrow" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+          <div class="symbol">
+			 <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+			</div>
+          <h2>Ort</h2>
+          <p>Die Orte unterscheiden sich im erster Linie stark bei den Kosten für den Skipass. Des Weiteren unterscheiden sie sich bei den möglichen Aktivitäten. In Nauders z.B. ist eher weniger mit Apré-Ski, aber dafür ist es günstig.</p>
+          <p><a class="btn btn-default" href="#ortrow" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+          <div class="symbol">
+			 <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+			</div>
+          <h2>Transport</h2>
+          <p>Ein größeres Auto muss geliehen werden. Eine Zugreise ist in der Regel immer sehr teuer und lang. Die Busreise ist eine echte Alternative.</p>
+          <p><a class="btn btn-default" href="#transportrow" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+		<div class="col-lg-2">
+          <div class="symbol">
+			 <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+			</div>
+          <h2>Zeitraum</h2>
+          <p>Die Januar Woche nach unseren Winterferien bietet sich an, da in dieser einen Woche Nebensaison ist.</p>
+          <p><a class="btn btn-default" href="#zeitraumrow" role="button">View details &raquo;</a></p>
+        </div>
+		<div class="col-lg-2">
+          <div class="symbol">
+			 <span class="glyphicon glyphicon-tower" aria-hidden="true"></span>
+			</div>
+          <h2>Unterkunft</h2>
+          <p>Richtig geil wäre ja ein Ferienhaus. Ein Apartment in entsprechender größe muss auch erst einmal gefunden werden. Im Hotel wären es natürlich mehrere Zimmer.</p>
+          <p><a class="btn btn-default" href="#unterkunftrow" role="button">View details &raquo;</a></p>
+        </div>
+		<div class="col-lg-2">
+          <div class="symbol">
+			 <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
+			</div>
+          <h2>Musik</h2>
+          <p>Ich brauchte eine 6te Kategorie für das Layout :D</p>
+          <p><a class="btn btn-default" href="#musikrow" role="button">View details &raquo;</a></p>
+        </div>
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider" id="budgetrow"></hr>
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Budget</h2>
+		  <input type="radio" name="Budget" value="bis 500"> bis 500 Euro<br /></input>
+          <input type="radio" name="Budget" value="500 bis 700"> 500 bis 700 Euro<br /></input>
+		  <input type="radio" name="Budget" value="700 bis 1000"> 700 bis 1.000 Euro<br /></input>
+          <input type="radio" name="Budget" value="mehr als 1000"> mehr als 1.000 Euro</input>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="ortrow"></hr>
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Ort</h2>
+          <fieldset> 
+          <ul>
+		    <li th:each="loc : ${allLocations}">
+		     <input type="checkbox" th:field="*{name}" th:value="${loc}" />
+			 <label th:for="${#ids.prev('name')}" 
+			           th:text="#{name}">Heating</label>
+			</li>
+		  </ul>
+			<label for="check1">
+			  <input type="checkbox" name="Ort" value="Nauders" id="check1"></input>
+			  Nauders
+			</label> 
+			<label for="check2">
+			   <input type="checkbox" name="Ort" value="Salbach" id="check2"></input>
+			   Salbach
+			</label> 
+			<label for="check3">
+			  <input type="checkbox" name="Ort" value="stmoritz" id="check3"></input>
+			  St. Moritz
+			</label> 
+			<label for="check4">
+			  <input type="checkbox" name="Ort" value="hintertux" id="check4"></input>
+			  Hintertux
+			</label> 
+		  </fieldset> 
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="transportrow"></hr>
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Transport</h2>
+          <fieldset> 
+			<label for="check1">
+			  <input type="checkbox" name="Transport" value="Auto" id="check1"></input>
+			  Auto
+			</label> 
+			<label for="check2">
+			   <input type="checkbox" name="Transport" value="Bahn" id="check2"></input>
+			   Bahn
+			</label> 
+			<label for="check3">
+			  <input type="checkbox" name="Transport" value="Bus" id="check3"></input>
+			  Bus
+			</label> 
+		  </fieldset> 
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="unterkunftrow"></hr>
+      
+	  <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Unterkunft</h2>
+           <fieldset> 
+			<label for="check1">
+			  <input type="checkbox" name="Unterkunft" value="Hotel" id="check1"></input>
+			  Hotel
+			</label> 
+			<label for="check2">
+			   <input type="checkbox" name="Unterkunft" value="Apartment" id="check2"></input>
+			   Apartment
+			</label> 
+			<label for="check3">
+			  <input type="checkbox" name="Unterkunft" value="Ferienhaus" id="check3"></input>
+			  Ferienhaus
+			</label> 
+		  </fieldset> 
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+        </div>
+      </div>
+	  
+	  <hr class="featurette-divider" id="zeitraumrow"></hr>
+      
+	  <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Zeitraum</h2>
+           <fieldset> 
+			<label for="check1">
+			  <input type="checkbox" name="Zeitraum" value="KW1" id="check1"></input>
+			  KW 1
+			</label> 
+			<label for="check2">
+			   <input type="checkbox" name="Zeitraum" value="KW2" id="check2"></input>
+			   KW 2
+			</label> 
+			<label for="check3">
+			  <input type="checkbox" name="Zeitraum" value="KW3" id="check3"></input>
+			  KW 3
+			</label> 
+		  </fieldset> 
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="musikrow"></hr>
+	  
+	  <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Musik</h2>
+          <fieldset> 
+			<label for="check1">
+			  <input type="checkbox" name="Musik" value="Rock" id="check1"></input>
+			  Rock
+			</label> 
+			<label for="check2">
+			   <input type="checkbox" name="Musik" value="Techno" id="check2"></input>
+			   Techno
+			</label> 
+			<label for="check3">
+			  <input type="checkbox" name="Musik" value="Pop" id="check3"></input>
+			  Pop
+			</label>
+			<label for="check3">
+			  <input type="checkbox" name="Musik" value="Folk" id="check3"></input>
+			  Folk
+			</label> 
+			<label for="check3">
+			  <input type="checkbox" name="Musik" value="Schlager" id="check3"></input>
+			  Schlager
+			</label>			
+		  </fieldset> 
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></img>
+        </div>
+      </div>
+
+      <hr class="featurette-divider"></hr>
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 warpgate40k.de</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

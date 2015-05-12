@@ -5,6 +5,7 @@ package de.webtemplate.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -28,8 +29,9 @@ public class User {
 	
 	private Boolean enabled;
 	
-	@OneToMany
-	private List<VoteItem> votes;
+	@OneToMany(mappedBy="user",
+			cascade={CascadeType.PERSIST, CascadeType.MERGE})
+	private List<Vote> votes;
 	
 	protected User() {}
 	
@@ -79,14 +81,14 @@ public class User {
 	/**
 	 * @return the votes
 	 */
-	public List<VoteItem> getVotes() {
+	public List<Vote> getVotes() {
 		return votes;
 	}
 
 	/**
 	 * @param votes the votes to set
 	 */
-	public void setVotes(List<VoteItem> votes) {
+	public void setVotes(List<Vote> votes) {
 		this.votes = votes;
 	}
 
